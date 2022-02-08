@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        // 1. body 태그 안에서 app이름을 가진 div 태그를 찾아 인스턴스를 붙이겠다는 뜻
+        // var options = new Vue({
+        //     el: '#app',
+        //     data: {
+        //         message: 'hi'
+        //     } 
+        // });
+
+        //  2. 생성자안에 들어가는 인자는 객체 표기법으로 정의한 객체이다.
+        var options = {
+            el: '#app',
+            data: {
+                message: 'hi'
+            },
+            method: {
+
+            },
+            created: function() {
+
+            }
+        }
+
+        var vm = new Vue(options);
+    </script>
+</body>
+</html>
